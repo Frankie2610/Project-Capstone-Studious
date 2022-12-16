@@ -273,6 +273,12 @@ font-size: 14px;
 }
 
 /* SERVICES */
+.services {
+    background-image: url(../Capstone_img/bg3.jpeg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 .services__card {
     position:relative;
     padding: 30px;
