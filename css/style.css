@@ -12,6 +12,55 @@ body,html{
 
 /* HEADER */
 
+    /* my global */
+    .hover__ori{
+        transition: all .5s;
+        cursor:pointer;
+
+    }
+    .hover__ori:hover{
+        color: #ff6e65;
+    }
+
+.header__top{
+    background-color: #0d369f;
+    padding: 16px 30px;
+    /* position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0; */
+}
+.header__top *{
+    color: white;
+    display: inline;
+    font-size: 14px;
+}
+.header__top a{
+    
+    text-decoration: none;
+}
+.header__top i {
+    font-size: 14px;
+}
+.header__left i{
+    margin-right: 5px ;
+}
+.header__left p {
+    font-weight: 500;
+    word-spacing: -1px;
+}
+.header__left a {
+    font-size: 14px;
+    font-weight: 500;
+}
+.header__right  i{
+    margin-left: 2rem;
+}
+
+/* .header__top  */
+
+
 /* NAV */
 
 /* CAROUSEL */
