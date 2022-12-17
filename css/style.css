@@ -35,6 +35,10 @@ p {
     letter-spacing: .4px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .btn-style {
     padding: 14px 30px;
     font-weight: 600;
@@ -62,7 +66,7 @@ p {
 }
 
 .title h3 {
-    padding: 20px 0 70px 0;
+    padding: 100px 0 30px 0;
     font-size: 40px;
     line-height: 50px;
     font-weight: 600;
@@ -79,8 +83,8 @@ p {
 .title::before {
     content: '';
     position: absolute;
-    bottom: 95px;
-    left: 50%;
+    bottom: 22px;
+    left: 47%;
     border: 1px solid black;
     width: 60px;
 }
@@ -88,8 +92,8 @@ p {
 .title::after {
     content: '';
     position: absolute;
-    bottom: 88px;
-    left: 52%;
+    bottom: 15px;
+    left: 49%;
     border: 1px solid black;
     width: 60px;
 }
@@ -277,12 +281,13 @@ font-size: 14px;
     background-image: url(../Capstone_img/bg3.jpeg);
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 .services__card {
     position:relative;
     padding: 30px;
 }
+
 .services__icon i {
     background: var(--primary-color);
     color: #0d369f;
