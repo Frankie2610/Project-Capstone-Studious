@@ -80,7 +80,36 @@ body,html{
     color: #ff6e65;
 
 } 
-
+nav .dropdown-item {
+    font-weight: 600 ;
+}
+header nav form input.form-control  {
+    height: 45px;
+    border-radius: 30px;
+    font-size: 14px;
+    
+}
+header nav form {
+    width: 230px;
+    position: relative;
+    margin: 0 10px 0 20px;
+}
+header nav form button{
+    position: absolute;
+    right: 10px;
+} 
+header nav form button i{
+    color: #0d369f;
+    font-size: 15px;
+}
+header nav .mode-container{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 20px;
+    transform: rotate(-15deg);
+    margin-right: 10px;
+}
 
 
 /* CAROUSEL */
