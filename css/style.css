@@ -15,7 +15,7 @@ html {
 /* HEADER */
     /* my global */
     .hover__ori {
-        transition: all .5s;
+        transition: all .4s;
         cursor: pointer;
     }
 
@@ -29,33 +29,25 @@ html {
 .header__top {
     background-color: #0d369f;
     padding: 16px 30px;
-
 }
-
 .header__top * {
     color: white;
     display: inline;
     font-size: 14px;
 }
-
 .header__top a {
-
     text-decoration: none;
 }
-
 .header__top i {
     font-size: 14px;
 }
-
 .header__left i {
     margin-right: 5px;
 }
-
 .header__left p {
     font-weight: 500;
     word-spacing: -1px;
 }
-
 .header__left a {
     font-size: 14px;
     font-weight: 500;
@@ -64,20 +56,24 @@ html {
 .header__right i {
     margin-left: 2rem;
 }
-
+.sticky-top{
+}
 
 /* NAV */
+nav.navbar{
+    padding: 16px 24px;
+
+}
 .navbar-brand p {
     font-size: 24px;
     margin: 0 3px;
     font-weight: 600;
     color: #0d369f;
 }
-
 .navbar-light .navbar-nav .nav-link {
     color: black;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
     padding: 0 10px;
     transition: all .5s;
 }
@@ -106,7 +102,7 @@ header nav form input.form-control {
 header nav form {
     width: 230px;
     position: relative;
-    margin: 0 10px 0 20px;
+    margin: 0 45px 0 20px;
 }
 
 header nav form button {
@@ -118,13 +114,18 @@ header nav form button i {
     color: #0d369f;
     font-size: 13px;
 }
-
+/* nav{
+    position: relative;
+} */
 header nav .mode-container {
+    position: absolute;
+    right: 20px;
+    top: 30px;
     width: 24px;
     height: 24px;
     line-height: 24px;
     font-size: 25px;
-    transform: rotate(-15deg);
+    transform: rotate(-15deg) translateY(2px);
     margin-right: 10px;
     cursor: pointer;
 }
@@ -134,6 +135,25 @@ header nav .mode-container {
     padding-right: 40px;
     box-shadow: none;
     border-color: #ced4da;
+}
+
+
+/* NAV TOGGLER */
+.navbar-toggler{
+    background-color: #0d369f;
+    color: white;
+    height: 34px;
+    width: 34px;
+}
+.navbar-toggler span {
+    width: 100%;
+    background-image: none !important;
+}
+.navbar-toggler span i{
+    transform: translateX(-5px);
+    color: white;
+    font-size: 22px;
+    line-height: 25px;
 }
 
 
@@ -243,15 +263,110 @@ header nav .mode-container {
     margin-bottom: 25px;
 }
 
+/* STUDIOUS */
+.studious h2{
+    font-weight: 600;
+    font-size: 40px;
+    color: #060606;
+    position: relative;
+    padding-bottom: 20px;
+}
+.studious h2 span{
+    color: #ff6e65;
+}
+.studious h2::before,
+.studious h2::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 60px;
+    background-color: #707070;
+    margin: auto;
+}
+.studious h2::after{
+    bottom: 10px;
+    left: 46%;
+    /* left: -20px; */
+}
+.studious h2::before{
+    bottom: 3px;
+    left: 48%;
+}
+.studious__item i{
+    margin-top: 42px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    background-color: #0d369f17;
+    color: #0d369f;
+    border-radius: 100%;
+}
+.studious__item h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 26px 0 23px ;
+}
+.studious__item p{
+    color: #707070;
+    font-size: 0.97rem;
+    line-height: 27px;
+}
+
 /******************* REPONSIVE ***************/
 @media screen and (min-width:1280px) {
-
- 
-  .container{
+    .container {
         max-width: 1200px;
     }
 
 }
 
+@media screen and (max-width:991.98px) {
+    .header__top {
+        display: none !important;
+        visibility: hidden;
+    }
+    .navbar-toggler{
+        position: relative;
+    }
+    nav{
+        padding: 4px 10px  !important;
+    }
+    header nav .mode-container {
+        position: absolute;
+        right: 70px;
+        top: 20px;
+    }
+    header{
+        height: 64px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+    header nav form {
+        margin: auto;
+    }
+    .navbar-light .navbar-nav .nav-item.active .nav-link {
+        color: #0d369f;
+    }
+    .navbar-light .navbar-nav .nav-link:focus,
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #0d369f;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        margin: 12px 0;
+    }
+    .navbar .dropdown-menu{
+        text-align: center;
+        width: 200px;
+        margin: auto;
+    }
+     /* a.dropdown-item:hover{
+        color: #0d369f;
+    } */
+}
 
 /* STUDIOUS */

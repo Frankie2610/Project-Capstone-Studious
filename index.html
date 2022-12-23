@@ -61,7 +61,6 @@
 
 <body>
   <!-- HEADER -->
-  <header>
     <div class="header__top container-fluid md d-flex justify-content-between align-items-center ">
       <div class="header__left ">
         <p class="mr-4 hover__ori">Have any question ?</p>
@@ -82,7 +81,9 @@
       </div>
     </div>
     <!-- NAV -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-4">
+    <header class="sticky-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
       <a class="navbar-brand ml-2 d-flex justify-content-between align-items-center" href="#">
         <img
           src="https://demo.w3layouts.com/demos_new/template_demo/13-03-2021/studious-liberty-demo_Free/425342591/web/assets/images/logo.png"
@@ -91,22 +92,24 @@
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon">
+          <i class="fa fa-bars"></i>
+        </span>
       </button>
-
+  
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active ">
-            <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
+            <a class="nav-link text-center" href="#">HOME<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item  text-center">
             <a class="nav-link" href="#">ABOUT US</a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item  text-center">
             <a class="nav-link" href="#">COURSES</a>
           </li>
           <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            <a class="nav-link dropdown-toggle  text-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               PAGE
             </a>
@@ -120,18 +123,19 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT US</a>
+            <a class="nav-link  text-center" href="#">CONTACT US</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0 ">
           <input class="form-control mr-sm-2 w-100" type="search" placeholder="Enter Keyword" aria-label="Search">
           <button class="btn  my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
         </form>
-        <div class="mode-container d-block ">
-          <i class="fa-regular fa-moon"></i>
-        </div>
+      </div>
+      <div class="mode-container d-block ">
+        <i class="fa-regular fa-moon"></i>
       </div>
     </nav>
+
   </header>
   <!-- CAROUSEL -->
   <section class="carousel__main">
@@ -161,47 +165,66 @@
     </div>
   </section>
   <!-- SERVICES -->
-<section class="services container">
-  <div class="services__content " >
-    <div class="row">
-      <div class="col-lg-3 col-md-6 col-sm-12 ">
-        <div class="services__item item1">
-          <i class="fa fa-cogs"></i>
-          <p class="font-weight-bold hover__black m-0">Engineering & Architecture</p>
+  <section class="services container">
+    <div class="services__content ">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="services__item item1">
+            <i class="fa fa-cogs"></i>
+            <p class="font-weight-bold hover__black m-0">Engineering & Architecture</p>
+          </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 ">
-        <div class="services__item item2">
-          <i class="fa fa-book"></i>
-          <p class="font-weight-bold hover__black m-0">Learning Managemetn</p>
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="services__item item2">
+            <i class="fa fa-book"></i>
+            <p class="font-weight-bold hover__black m-0">Learning Managemetn</p>
+          </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 ">
-        <div class="services__item item3">
-          <i class="fa fa-coffee"></i>
-          <p class="font-weight-bold hover__black m-0">Business & Management</p>
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="services__item item3">
+            <i class="fa fa-coffee"></i>
+            <p class="font-weight-bold hover__black m-0">Business & Management</p>
+          </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-12 ">
-        <div class="services__item item4">
-          <i class="fa fa-hourglass-half"></i>
-          <p class="font-weight-bold hover__black m-0">Artificial Intellgence</p>
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="services__item item4">
+            <i class="fa fa-hourglass-half"></i>
+            <p class="font-weight-bold hover__black m-0">Artificial Intellgence</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-
-
-
-  <!-- <script src="./js/NavFixedTop.js"></script> -->
- 
+  </section>
   <!-- STUDIOUS -->
-
-
-
+  <section class="studious">
+      <div class="container">
+        <h2 class="text-center mt-5">Welcome to <span>Studious</span></h2>
+        <div class="row text-center">
+          <div class="studious__item col-lg-4 col-md-6 col-sm-6 col-12">
+            <i class="fa fa-graduation-cap"></i>
+            <h3 class="hover__ori">Trending Courses</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+          </div>
+          <div class="studious__item col-lg-4 col-md-6 col-sm-6 col-12">
+            <i class="fa fa-users"></i>
+            <h3 class="hover__ori">Certified Teachers</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+          </div>
+          <div class="studious__item col-lg-4 col-md-6 col-sm-6 col-12">
+            <i class="fa fa-book"></i>
+            <h3 class="hover__ori">Book & Library</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  
+  
+  
+  
+  <script src="./js/NavFixedTop.js"></script>
+  
+  <!-- STUDIOUS -->
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
