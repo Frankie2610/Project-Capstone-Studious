@@ -62,6 +62,9 @@ nav.navbar{
     padding: 16px 24px;
 
 }
+nav.nav-fixed{
+    padding: 4px 24px  !important;
+}
 .navbar-brand p {
     font-size: 24px;
     margin: 0 3px;
@@ -127,7 +130,9 @@ header nav .mode-container {
     margin-right: 10px;
     cursor: pointer;
 }
-
+header nav.nav-fixed .mode-container {
+    top: 20px;
+}
 .form-control:focus {
     outline: none;
     padding-right: 40px;
@@ -329,7 +334,7 @@ header nav .mode-container {
         position: relative;
     }
     nav{
-        padding: 4px 10px  !important;
+        padding: 4px 24px  !important;
     }
     header nav .mode-container {
         position: absolute;
@@ -366,5 +371,4 @@ header nav .mode-container {
         color: #0d369f;
     } */
 }
-
 /* STUDIOUS */
