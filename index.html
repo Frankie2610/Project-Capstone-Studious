@@ -135,15 +135,28 @@
   </header>
   <!-- CAROUSEL -->
   <section class="carousel__main">
-    <div class="carousel__content owl-carousel owl-theme container-fluid">
+    <div class="carousel__content owl-carousel owl-theme w-100">
       <div class="carousel__item w-100">
-        <p>sometext</p>
-
-        <img class="w-100 d-block" src="https://demo.w3layouts.com/demos_new/template_demo/13-03-2021/studious-liberty-demo_Free/425342591/web/assets/images/banner2.jpg" alt="">
+        <div class="container mr-auto">
+          <div class="carousel__text ">
+            <h3 class="font-weight-bold">Master the Skills to Drive your Career</h3>
+            <button class="btn ">Know More <i class="fa fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <img class="d-block"
+          src="https://demo.w3layouts.com/demos_new/template_demo/13-03-2021/studious-liberty-demo_Free/425342591/web/assets/images/banner2.jpg"
+          alt="">
       </div>
       <div class="carousel__item w-100">
-        <p>sometext</p>
-        <img class="w-100 d-block" src="https://demo.w3layouts.com/demos_new/template_demo/13-03-2021/studious-liberty-demo_Free/425342591/web/assets/images/banner2.jpg" alt="">
+        <div class="container mr-auto">
+          <div class="carousel__text ">
+            <h3 class="font-weight-bold">Studious is the best choice for everyone</h3>
+            <button class="btn ">Know More <i class="fa fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <img class="d-block"
+          src="https://demo.w3layouts.com/demos_new/template_demo/13-03-2021/studious-liberty-demo_Free/425342591/web/assets/images/banner3.jpg"
+          alt="">
       </div>
     </div>
   </section>
@@ -173,17 +186,17 @@
     <script>
       $('.owl-carousel').owlCarousel({
         loop: true,
-        margin: 10,
-        nav: true,
+        autoplay:false,
+        autoplayTimeout:4000,
         responsive: {
           0: {
             items: 1
           },
           600: {
-            items: 3
+            items: 1
           },
           1000: {
-            items: 5
+            items: 1
           }
         }
       })
