@@ -96,11 +96,11 @@ header nav form {
 }
 header nav form button{
     position: absolute;
-    right: 10px;
+    right: 15px;
 } 
 header nav form button i{
     color: #0d369f;
-    font-size: 15px;
+    font-size: 13px;
 }
 header nav .mode-container{
     width: 24px;
@@ -110,9 +110,22 @@ header nav .mode-container{
     transform: rotate(-15deg);
     margin-right: 10px;
 }
+.form-control:focus{
+    outline: none;
+    padding-right: 40px ;
+    box-shadow: none;
+    border-color: #ced4da;
+}
 
 
 /* CAROUSEL */
+
+.carousel__content{
+    height: 500px;
+    overflow: hiden;
+}
+
+
 
 /* SERVICES */
 
