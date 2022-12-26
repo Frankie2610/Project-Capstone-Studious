@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,15 +11,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
-    <!-- FONT MONTSERAT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  
+  <!-- FONT MONTSERAT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
   <!-- FANCY BOX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
 
@@ -47,8 +49,8 @@
   <link rel="stylesheet" href="https://samar.dexignzone.com/xhtml/vendor/swiper/css/swiper.min.css">
 
   <!-- OWL.CAROUSEL  -->
-  <link rel="stylesheet" href="./css/owl.carousel.min.css">
-  <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -57,6 +59,168 @@
   <!-- MY CSS  -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
+<body>
+  <!-- HEADER -->
+    <div class="header__top container-fluid md d-flex justify-content-between align-items-center ">
+      <div class="header__left ">
+        <p class="mr-4 hover__ori">Have any question ?</p>
+        <div class="header__tel mr-4">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:+1(21) 234 4567" class="hover__ori">+1(21) 234 4567</a>
+        </div>
+        <div class="header__mail ">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:jhinyugioh@gmail.com" class="hover__ori">mail@example.com</a>
+        </div>
+      </div>
+      <div class="header__right">
+        <a href="#" "><i class=" hover__ori fab fa-facebook-f"></i></a>
+        <a href="#" "><i class=" hover__ori fab fa-twitter"></i></a>
+        <a href="#" "><i class=" hover__ori fab fa-instagram"></i></a>
+        <a href="#" "><i class=" hover__ori fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <!-- NAV -->
+    <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-top ">
+      <a class="navbar-brand ml-2 d-flex justify-content-between align-items-center" href="#">
+        <img
+          src="https://demo.w3layouts.com/demos_new/template_demo/13-03-2021/studious-liberty-demo_Free/425342591/web/assets/images/logo.png"
+          alt="logo book blue">
+        <p class="hover__ori d-inline ">Studious</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fa fa-bars"></i>
+        </span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active ">
+            <a class="nav-link text-center" href="#">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item  text-center">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item  text-center">
+            <a class="nav-link" href="#">COURSES</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle  text-center" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              PAGE
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item hover__ori" href="#">BLOG POST</a>
+              <a class="dropdown-item hover__ori" href="#">BLOG SINGLE</a>
+              <a class="dropdown-item hover__ori" href="#">404 PAGE</a>
+              <a class="dropdown-item hover__ori" href="#">EMAIL TEMPLATE</a>
+              <a class="dropdown-item hover__ori" href="#">LANDING PAGE</a>
+              <a class="dropdown-item hover__ori" href="#">SHORTCODES</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-center" href="#">CONTACT US</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 ">
+          <input class="form-control mr-sm-2 w-100" type="search" placeholder="Enter Keyword" aria-label="Search">
+          <button class="btn  my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <div class="mode-container d-block ">
+        <i class="fa-regular fa-moon"></i>
+      </div>
+    </nav>
+
+  </header>
+  <!-- CAROUSEL -->
+  <section class="carousel__main">
+    <div class="carousel__content owl-carousel owl-theme w-100">
+      <div class="carousel__item w-100">
+        <div class="container mr-auto">
+          <div class="carousel__text ">
+            <h3 class="font-weight-bold">Master the Skills to Drive your Career</h3>
+            <button class="btn ">Know More <i class="fa fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <img class="d-block"
+          src="https://demo.w3layouts.com/demos_new/template_demo/13-03-2021/studious-liberty-demo_Free/425342591/web/assets/images/banner2.jpg"
+          alt="">
+      </div>
+      <div class="carousel__item w-100">
+        <div class="container mr-auto">
+          <div class="carousel__text ">
+            <h3 class="font-weight-bold">Studious is the best choice for everyone</h3>
+            <button class="btn ">Know More <i class="fa fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <img class="d-block"
+          src="https://demo.w3layouts.com/demos_new/template_demo/13-03-2021/studious-liberty-demo_Free/425342591/web/assets/images/banner3.jpg"
+          alt="">
+      </div>
+    </div>
+  </section>
+  <!-- SERVICES -->
+  <section class="services container">
+    <div class="services__content ">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="services__item item1">
+            <i class="fa fa-cogs"></i>
+            <p class="font-weight-bold hover__black m-0">Engineering & Architecture</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="services__item item2">
+            <i class="fa fa-book"></i>
+            <p class="font-weight-bold hover__black m-0">Learning Managemetn</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="services__item item3">
+            <i class="fa fa-coffee"></i>
+            <p class="font-weight-bold hover__black m-0">Business & Management</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 ">
+          <div class="services__item item4">
+            <i class="fa fa-hourglass-half"></i>
+            <p class="font-weight-bold hover__black m-0">Artificial Intellgence</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- STUDIOUS -->
+  <section class="studious">
+      <div class="container">
+        <h2 class="text-center mt-5">Welcome to <span>Studious</span></h2>
+        <div class="row text-center">
+          <div class="studious__item col-lg-4 col-md-6 col-sm-6 col-12">
+            <i class="fa fa-graduation-cap"></i>
+            <h3 class="hover__ori">Trending Courses</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+          </div>
+          <div class="studious__item col-lg-4 col-md-6 col-sm-6 col-12">
+            <i class="fa fa-users"></i>
+            <h3 class="hover__ori">Certified Teachers</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+          </div>
+          <div class="studious__item col-lg-4 col-md-6 col-sm-6 col-12">
+            <i class="fa fa-book"></i>
+            <h3 class="hover__ori">Book & Library</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  
+  <script src="./js/NavFixedTop.js"></script>
+  <!-- End ngthtrong -->
 
 <body id="myBody">
   <!-- HEADER -->
@@ -478,5 +642,25 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="./JS/index.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        autoplay:false,
+        autoplayTimeout:4000,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        }
+      })
+    </script>
+
 </body>
