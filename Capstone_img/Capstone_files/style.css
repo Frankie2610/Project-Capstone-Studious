@@ -1,15 +1,3 @@
-/* GLOBAL */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body,html{
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
 /* HEADER */
 
 /* NAV */
@@ -24,20 +12,19 @@ body,html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
-
 
 html,
 body {
     margin: 0;
     padding: 0;
-    color:#060606
+
+
 }
 
 a {
     cursor: pointer;
-    text-decoration: none;
+        text-decoration: none;
     transition: .5s all;
 }
 
@@ -50,14 +37,9 @@ p {
     letter-spacing: .4px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-}
+} */
 
 .btn-style {
     padding: 14px 30px;
@@ -116,6 +98,10 @@ h6 {
     left: 49%;
     border: 1px solid black;
     width: 60px;
+}
+
+.course {
+    color: black;
 }
 
 .card {
@@ -255,7 +241,6 @@ font-size: 14px;
 
 .course__body {
     margin-bottom: 32px;
-
 }
 
 .course__container:hover {
@@ -263,22 +248,19 @@ font-size: 14px;
 }
 
 .course__body h5 {
-    font-size: 22px;
+    font-size: 22px;   
     font-weight: 600;
-    color: #060606;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+ color:#060606;
+ 
 }
-
 
 .course__body a {
     text-decoration: none;
-
+       
 }
-
-.course__body h5:hover {
-    color: #ff6e65;
+.course__body h5:hover{
+color:#ff6e65;
 }
-
 .course__content {
     position: relative;
     padding-bottom: 200px;
@@ -322,17 +304,15 @@ font-size: 14px;
     background-size: cover;
 }
 
-.services h5 {
-    font-weight: 600;
-}
 
-.services__card {
-    position: relative;
-    padding: 28px;
+
+ .services__card {
+    position:relative;
+    padding: 30px;
 }
 
 .services__icon i {
-    background: #0d369f;
+    background: var(--primary-color);
     color: #0d369f;
     font-size: 28px;
     background: rgb(13 54 159 / 9%);
@@ -342,71 +322,21 @@ font-size: 14px;
     border-radius: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
-    position: absolute;
+    position:absolute;
     left: 50%;
     top: 50%;
     margin-right: 30px;
 }
 
-#services__body {
-    padding: 0px;
-    padding-left: 5px;
-}
 
 .services__container {
     display: flex;
 }
 
-.col-3 .services__icon {
-    margin: 1px;
-    padding-right: 8px;
-    text-align: left;
-}
+
 
 /* .services__items {
     padding: 15px;
 
 } */
 
-/* Light theme */
-#myBody{
-    background-color:black;
-  }
-  #switchButton {
-    background-color: white;
-  }
-  #switchButton .fa-sun {
-    display: none;
-  }
-  #switchButton .fa-moon {
-    display: block;
-  }
-  
-  /* Dark Theme*/
-  .dark#myBody{
-    background-color:white;
-  }
-  .dark #switchButton {
-    background-color: black;
-  }
-  .dark #switchButton .fa-sun {
-    display: block;
-    color: white;
-  }
-  
-  .dark #switchButton .fa-moon {
-    display: none;
-  }
- .dark .mode {
-    background-color: black;
-    color: white;
-  }
-  .dark .mode p,
-  .dark .mode h5  {
-    background-color: black;
-    color: white;
-  }
-
-
-  
-  
