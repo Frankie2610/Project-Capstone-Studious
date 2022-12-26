@@ -12,8 +12,6 @@ html {
     color:#060606
 }
 
-
-
 /* HEADER */
     /* my global */
     .hover__ori {
@@ -117,27 +115,73 @@ header nav form button i {
 /* nav{
     position: relative;
 } */
-header nav .mode-container {
+header nav .mode-container  {
     position: absolute;
     right: 20px;
-    top: 30px;
+    top: 24px;
     width: 24px;
     height: 24px;
     line-height: 24px;
     font-size: 25px;
-    transform: rotate(-15deg) translateY(2px);
+    /* transform: rotate(-15deg) translateY(2px); */
     margin-right: 10px;
-    cursor: pointer;
+    
 }
+
+header nav .mode-container i {
+    transform: rotate(-15deg) translateY(2px);
+    color: #0d369f;
+    font-size: 24px;
+}
+
 header nav.nav-fixed .mode-container {
     top: 20px;
 }
+
 .form-control:focus {
     outline: none;
     padding-right: 40px;
     box-shadow: none;
     border-color: #ced4da;
 }
+/* Light theme */
+#myBody{
+    background-color:black;
+  }
+  #switchButton {
+    background-color: #f8f9fa;
+  }
+  #switchButton .fa-sun {
+    display: none;
+  }
+  #switchButton .fa-moon {
+    display: block;
+  }
+  
+  /* Dark Theme*/
+  .dark#myBody{
+    background-color:#f8f9fa;
+  }
+  .dark #switchButton {
+    background-color: black;
+  }
+  .dark #switchButton .fa-sun {
+    display: block;
+    color: #0d369f;
+  }
+  
+  .dark #switchButton .fa-moon {
+    display: none;
+  }
+ .dark .mode {
+    background-color: black;
+    color: white;
+  }
+  .dark .mode p,
+  .dark .mode h5  {
+    background-color: black;
+    color: white;
+  }
 
 
 /* NAV TOGGLER */
@@ -713,44 +757,6 @@ font-size: 14px;
 
 } */
 
-/* Light theme */
-#myBody{
-    background-color:black;
-  }
-  #switchButton {
-    background-color: white;
-  }
-  #switchButton .fa-sun {
-    display: none;
-  }
-  #switchButton .fa-moon {
-    display: block;
-  }
-  
-  /* Dark Theme*/
-  .dark#myBody{
-    background-color:white;
-  }
-  .dark #switchButton {
-    background-color: black;
-  }
-  .dark #switchButton .fa-sun {
-    display: block;
-    color: white;
-  }
-  
-  .dark #switchButton .fa-moon {
-    display: none;
-  }
- .dark .mode {
-    background-color: black;
-    color: white;
-  }
-  .dark .mode p,
-  .dark .mode h5  {
-    background-color: black;
-    color: white;
-  }
 
 
   
