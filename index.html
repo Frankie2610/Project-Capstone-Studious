@@ -61,20 +61,20 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body id="myBody">
   <!-- HEADER -->
   <!-- NAV -->
   <!-- SERVICES -->
   <!-- STUDIOUS -->
   <!-- COURSE  -->
-  <div class="course bg-light text-black">
+  <div id="lesson" class="course bg-light text-black mode">
     <div class="container">
       <div class="title text-center mx-auto mb-5">
         <h3> <span>Pick a Course to</span> Get Started</h3>
       </div>
       <div class="course__content row">
         <div class="course__container col-12 col-md-6 col-xl-4">
-          <div class="card">
+          <div class="mode card">
             <div class="course__pic">
               <div class="course__tag">
                 <a href="#">Art</a>
@@ -89,7 +89,7 @@
               <ul>
                 <li>
                   <i class="fa fa-signal" aria-hidden="true"></i>
-                  <p>Intermediate</p>
+                  <p class="mode">Intermediate</p>
                 </li>
                 <li>
                   <i class="fa-regular fa-clock"></i>
@@ -103,7 +103,7 @@
               </a>
               <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="card-footer course__end">
+            <div class="card-footer course__end mode">
               <small class="text-muted course__footer">
                 <ul class="course__star">
                   <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
@@ -120,8 +120,9 @@
             </div>
           </div>
         </div>
+
         <div class="course__container col-12 col-md-6 col-xl-4">
-          <div class="card">
+          <div class="card mode">
             <div class="course__pic">
               <div class="course__tag">
                 <a href="#">Digital</a>
@@ -151,7 +152,7 @@
               </a>
               <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="card-footer course__end">
+            <div class="card-footer course__end mode">
               <small class="text-muted course__footer">
                 <ul class="course__star">
                   <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
@@ -169,7 +170,7 @@
           </div>
         </div>
         <div class="course__container col-12 col-md-6 col-xl-4">
-          <div class="card">
+          <div class="card mode">
             <div class="course__pic">
               <div class="course__tag">
                 <a href="#">Html</a>
@@ -198,7 +199,7 @@
               </a>
               <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="card-footer course__end">
+            <div class="card-footer course__end mode">
               <small class="text-muted course__footer">
                 <ul class="course__star">
                   <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
@@ -216,7 +217,7 @@
           </div>
         </div>
         <div class="course__container col-12 col-md-6 col-xl-4">
-          <div class="card">
+          <div class="card mode">
             <div class="course__pic">
               <div class="course__tag">
                 <a href="#">Website</a>
@@ -245,7 +246,7 @@
               </a>
               <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="card-footer course__end">
+            <div class="card-footer course__end mode">
               <small class="text-muted course__footer">
                 <ul class="course__star">
                   <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
@@ -263,7 +264,7 @@
           </div>
         </div>
         <div class="course__container col-12 col-md-6 col-xl-4">
-          <div class="card">
+          <div class="card mode">
             <div class="course__pic">
               <div class="course__tag">
                 <a href="#">Marketing</a>
@@ -292,7 +293,7 @@
               </a>
               <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="card-footer course__end">
+            <div class="card-footer course__end mode">
               <small class="text-muted course__footer">
                 <ul class="course__star">
                   <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
@@ -310,7 +311,7 @@
           </div>
         </div>
         <div class="course__container col-12 col-md-6 col-xl-4">
-          <div class="card">
+          <div class="card mode">
             <div class="course__pic">
               <div class="course__tag">
                 <a href="#">Study</a>
@@ -339,7 +340,7 @@
               </a>
               <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="card-footer course__end">
+            <div class="card-footer course__end mode">
               <small class="text-muted course__footer">
                 <ul class="course__star">
                   <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
@@ -353,14 +354,14 @@
                     Know Details
                     <i class="fa-solid fa-arrow-right"></i>
                   </a>
-                
+
                 </div>
               </small>
             </div>
           </div>
         </div>
         <div class="course__button text-center mr-0">
-          <button class="btn-style btn-style-secondary">
+          <button id="button_browse" class="btn-style btn-style-secondary">
             <p>Browse more courses</p>
             <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i>
           </button>
@@ -372,7 +373,7 @@
   <div class="services py-5">
     <div class="services__container container py-md-5 py-4">
       <div class="row ">
-        <div class="col-xl-4 services__left" >
+        <div class="col-xl-4 services__left">
 
         </div>
         <div class="col-xl-8 col-12 services__right">
@@ -462,15 +463,23 @@
   </div>
 
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
+  <div style="width: 18rem;" class="mx-auto py-3">
+    <button class="btn" id="switchButton" title="Click to switch theme">
+      <i class="far fa-moon"></i>
+      <i class="far fa-sun"></i>
+    </button>
 
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./JS/index.js"></script>
 </body>

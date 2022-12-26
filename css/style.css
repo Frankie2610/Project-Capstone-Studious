@@ -20,8 +20,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-
-
+    color:#060606
 }
 
 a {
@@ -105,10 +104,6 @@ h6 {
     left: 49%;
     border: 1px solid black;
     width: 60px;
-}
-
-.course {
-    color: black;
 }
 
 .card {
@@ -315,13 +310,17 @@ font-size: 14px;
     background-size: cover;
 }
 
+.services h5 {
+    font-weight: 600;
+}
+
 .services__card {
     position: relative;
-    padding: 30px;
+    padding: 28px;
 }
 
 .services__icon i {
-    background: var(--primary-color);
+    background: #0d369f;
     color: #0d369f;
     font-size: 28px;
     background: rgb(13 54 159 / 9%);
@@ -339,7 +338,7 @@ font-size: 14px;
 
 #services__body {
     padding: 0px;
-    padding-left: 2px;
+    padding-left: 5px;
 }
 
 .services__container {
@@ -348,10 +347,54 @@ font-size: 14px;
 
 .col-3 .services__icon {
     margin: 1px;
-    padding-right: 5px;
+    padding-right: 8px;
+    text-align: left;
 }
 
 /* .services__items {
     padding: 15px;
 
 } */
+
+/* Light theme */
+#myBody{
+    background-color:black;
+  }
+  #switchButton {
+    background-color: white;
+  }
+  #switchButton .fa-sun {
+    display: none;
+  }
+  #switchButton .fa-moon {
+    display: block;
+  }
+  
+  /* Dark Theme*/
+  .dark#myBody{
+    background-color:white;
+  }
+  .dark #switchButton {
+    background-color: black;
+  }
+  .dark #switchButton .fa-sun {
+    display: block;
+    color: white;
+  }
+  
+  .dark #switchButton .fa-moon {
+    display: none;
+  }
+ .dark .mode {
+    background-color: black;
+    color: white;
+  }
+  .dark .mode p,
+  .dark .mode h5  {
+    background-color: black;
+    color: white;
+  }
+
+
+  
+  
