@@ -9,7 +9,9 @@ body,
 html {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+    color:#060606
 }
+
 
 
 /* HEADER */
@@ -22,9 +24,6 @@ html {
     .hover__ori:hover {
         color: #ff6e65;
     }
-
-   
-
 
 .header__top {
     background-color: #0d369f;
@@ -275,13 +274,111 @@ header nav.nav-fixed .mode-container {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    color:#060606
+.studious h2{
+    font-weight: 600;
+    font-size: 40px;
+    color: #060606;
+    position: relative;
+    padding-bottom: 20px;
 }
+.studious h2 span{
+    color: #ff6e65;
+}
+.studious h2::before,
+.studious h2::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 60px;
+    background-color: #707070;
+    margin: auto;
+}
+.studious h2::after{
+    bottom: 10px;
+    left: 46%;
+    /* left: -20px; */
+}
+.studious h2::before{
+    bottom: 3px;
+    left: 48%;
+}
+.studious__item i{
+    margin-top: 42px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 30px;
+    background-color: #0d369f17;
+    color: #0d369f;
+    border-radius: 100%;
+}
+.studious__item h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 26px 0 23px ;
+}
+.studious__item p{
+    color: #707070;
+    font-size: 0.97rem;
+    line-height: 27px;
+}
+
+/******************* REPONSIVE ***************/
+@media screen and (min-width:1280px) {
+    .container {
+        max-width: 1200px;
+    }
+
+}
+
+@media screen and (max-width:991.98px) {
+    .header__top {
+        display: none !important;
+        visibility: hidden;
+    }
+    .navbar-toggler{
+        position: relative;
+    }
+    nav{
+        padding: 4px 24px  !important;
+    }
+    header nav .mode-container {
+        position: absolute;
+        right: 70px;
+        top: 20px;
+    }
+    header{
+        height: 64px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 2;
+    }
+    header nav form {
+        margin: auto;
+    }
+    .navbar-light .navbar-nav .nav-item.active .nav-link {
+        color: #0d369f;
+    }
+    .navbar-light .navbar-nav .nav-link:focus,
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #0d369f;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        margin: 12px 0;
+    }
+    .navbar .dropdown-menu{
+        text-align: center;
+        width: 200px;
+        margin: auto;
+    }
+     /* a.dropdown-item:hover{
+        color: #0d369f;
+    } */
+}
+/* End ngthtrong */
 
 a {
     cursor: pointer;
@@ -658,108 +755,3 @@ font-size: 14px;
 
   
   
-.studious h2{
-    font-weight: 600;
-    font-size: 40px;
-    color: #060606;
-    position: relative;
-    padding-bottom: 20px;
-}
-.studious h2 span{
-    color: #ff6e65;
-}
-.studious h2::before,
-.studious h2::after{
-    position: absolute;
-    content: "";
-    display: block;
-    height: 2px;
-    width: 60px;
-    background-color: #707070;
-    margin: auto;
-}
-.studious h2::after{
-    bottom: 10px;
-    left: 46%;
-    /* left: -20px; */
-}
-.studious h2::before{
-    bottom: 3px;
-    left: 48%;
-}
-.studious__item i{
-    margin-top: 42px;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    font-size: 30px;
-    background-color: #0d369f17;
-    color: #0d369f;
-    border-radius: 100%;
-}
-.studious__item h3{
-    font-size: 24px;
-    font-weight: 600;
-    margin: 26px 0 23px ;
-}
-.studious__item p{
-    color: #707070;
-    font-size: 0.97rem;
-    line-height: 27px;
-}
-
-/******************* REPONSIVE ***************/
-@media screen and (min-width:1280px) {
-    .container {
-        max-width: 1200px;
-    }
-
-}
-
-@media screen and (max-width:991.98px) {
-    .header__top {
-        display: none !important;
-        visibility: hidden;
-    }
-    .navbar-toggler{
-        position: relative;
-    }
-    nav{
-        padding: 4px 24px  !important;
-    }
-    header nav .mode-container {
-        position: absolute;
-        right: 70px;
-        top: 20px;
-    }
-    header{
-        height: 64px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 2;
-    }
-    header nav form {
-        margin: auto;
-    }
-    .navbar-light .navbar-nav .nav-item.active .nav-link {
-        color: #0d369f;
-    }
-    .navbar-light .navbar-nav .nav-link:focus,
-    .navbar-light .navbar-nav .nav-link:hover {
-        color: #0d369f;
-    }
-    .navbar-light .navbar-nav .nav-link {
-        margin: 12px 0;
-    }
-    .navbar .dropdown-menu{
-        text-align: center;
-        width: 200px;
-        margin: auto;
-    }
-     /* a.dropdown-item:hover{
-        color: #0d369f;
-    } */
-}
-/* End ngthtrong */
