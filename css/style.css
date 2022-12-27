@@ -8,7 +8,6 @@
 body,
 html {
     font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
     color: #060606
 }
 
@@ -176,57 +175,6 @@ header nav.nav-fixed .mode-container {
     display: block;
 }
 
-/* Dark Theme*/
-.dark#myBody {
-    background-color: #121725
-}
-
-.dark2#head {
-    background-color: #4867b0;
-}
-
-.dark #switchButton {
-    background-color: #121725
-}
-
-.dark #switchButton .fa-sun {
-    display: block;
-    color: #4867b0;
-    transition: all .5s;
-}
-
-.dark #switchButton .fa-search {
-    color: #4867b0;
-}
-
-.dark #switchButton:hover .fa-sun {
-    color: #ff4f81
-}
-
-.dark #switchButton .fa-moon {
-    display: none;
-}
-
-.dark .mode {
-    background-color: #121725;
-    color: #f8f9fa;
-}
-
-.dark .mode h2,
-.dark .mode .form-control,
-.dark .mode .course__level p,
-.dark .mode h5,
-.dark .mode .title span,
-.dark .mode .nav-link {
-    background-color: #121725;
-    color: #f8f9fa;
-}
-
-.dark .mode .title::after,
-.dark .mode .title::before {
-    border: 1px solid #f8f9fa;
-}
-
 /* NAV TOGGLER */
 .navbar-toggler {
     background-color: #0d369f;
@@ -361,24 +309,21 @@ header nav.nav-fixed .mode-container {
 }
 
 /* STUDIOUS */
-/* GLOBAL  */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+.studious h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .studious h2 {
     font-weight: 600;
     font-size: 40px;
-    color: #060606;
+    color: #ff6e65;
     position: relative;
     padding-bottom: 20px;
 }
 
-.studious h2 span {
-    color: #ff6e65;
+.studious span {
+    color: #060606;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .studious h2::before,
@@ -508,15 +453,6 @@ p {
     letter-spacing: .4px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Montserrat', sans-serif;
-}
-
 .btn-style {
     padding: 14px 30px;
     font-weight: 600;
@@ -563,8 +499,10 @@ h6 {
     position: absolute;
     bottom: 22px;
     left: 47%;
-    border: 1px solid black;
+    background-color: #707070;
+    height: 2px;
     width: 60px;
+
 }
 
 .title::after {
@@ -572,7 +510,8 @@ h6 {
     position: absolute;
     bottom: 15px;
     left: 49%;
-    border: 1px solid black;
+    background-color: #707070;
+    height: 2px;
     width: 60px;
 }
 
@@ -720,21 +659,19 @@ font-size: 14px;
     box-shadow: 1px 0px 0px 0px rgb(4 20 69 / 10%);
 }
 
-.course__body h5 {
+.course__body a {
     font-size: 22px;
     font-weight: 600;
     color: #060606;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    transition: all 0.5s;
 }
 
+.course__body a:hover {
+    color: #ff6e65;
+}
 
 .course__body a {
     text-decoration: none;
-
-}
-
-.course__body h5:hover {
-    color: #ff6e65;
 }
 
 .course__content {
@@ -743,7 +680,7 @@ font-size: 14px;
     margin-bottom: 10px;
 }
 
-s .course__container {
+.course__container {
     margin-bottom: 30px;
 }
 
@@ -782,6 +719,7 @@ s .course__container {
 
 .benefits h5 {
     font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .benefits__card {
@@ -825,3 +763,67 @@ s .course__container {
     padding: 15px;
 
 } */
+/* Dark Theme*/
+.dark#myBody {
+    background-color:#161c2d
+}
+
+.dark2#head {
+    background-color: #4867b0;
+}
+/* .dark3#lesson {
+    background-color: #121725;
+} */
+.dark #switchButton {
+    background-color: #161c2d;
+}
+
+.dark #switchButton .fa-sun {
+    display: block;
+    color: #4867b0;
+    transition: all .5s;
+}
+
+.dark #switchButton .fa-search {
+    color: #4867b0;
+}
+
+.dark #switchButton:hover .fa-sun {
+    color: #ff4f81
+}
+
+.dark #switchButton .fa-moon {
+    display: none;
+}
+
+.dark .mode {
+    background-color:#161c2d;
+    color: #f8f9fa;
+}
+
+.dark .mode  span,
+.dark .mode .form-control,
+.dark .mode .course__level p,
+.dark .mode  h5,
+.dark .mode .title span,
+.dark .mode .nav-link {
+    background-color: #161c2d;
+    color: #f8f9fa;
+}
+
+.dark .mode .title::after,
+.dark .mode .title::before,
+.dark .mode h2::before,
+.dark .mode h2::after {
+    background-color: #b7b7b7;
+}
+
+.course__body h5:hover {
+    color: #ff6e65;
+}
+
+.dark .mode #benefits__body p,
+.dark .mode .course__body p,
+.dark .mode .studious__item p {
+    color: #b6b7b6;
+}
