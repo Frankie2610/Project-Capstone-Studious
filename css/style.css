@@ -142,10 +142,9 @@ header nav .mode-container i {
     transform: rotate(-15deg) translateY(2px);
     color: #0d369f;
     font-size: 24px;
-    transition: all .5s
 }
 
-header nav .mode-container:hover i {
+#switchButton:hover i {
     color: #ff4f81;
 }
 
@@ -162,7 +161,7 @@ header nav.nav-fixed .mode-container {
 
 /* Light theme */
 #myBody {
-    background-color:#343a40;
+    background-color: white;
 }
 
 #switchButton {
@@ -179,19 +178,25 @@ header nav.nav-fixed .mode-container {
 
 /* Dark Theme*/
 .dark#myBody {
-    background-color: #f8f9fa;
+    background-color: #121725
 }
-.dark2#head{
+
+.dark2#head {
     background-color: #4867b0;
 }
+
 .dark #switchButton {
     background-color: #121725
 }
 
 .dark #switchButton .fa-sun {
     display: block;
-    color: #0d369f;
+    color: #4867b0;
     transition: all .5s;
+}
+
+.dark #switchButton .fa-search {
+    color: #4867b0;
 }
 
 .dark #switchButton:hover .fa-sun {
@@ -203,20 +208,24 @@ header nav.nav-fixed .mode-container {
 }
 
 .dark .mode {
-    background-color:#121725;
+    background-color: #121725;
     color: #f8f9fa;
 }
-.dark .mode p,
+
+.dark .mode h2,
+.dark .mode .form-control,
+.dark .mode .course__level p,
 .dark .mode h5,
 .dark .mode .title span,
 .dark .mode .nav-link {
     background-color: #121725;
     color: #f8f9fa;
 }
+
 .dark .mode .title::after,
 .dark .mode .title::before {
     border: 1px solid #f8f9fa;
-} 
+}
 
 /* NAV TOGGLER */
 .navbar-toggler {
@@ -734,7 +743,7 @@ font-size: 14px;
     margin-bottom: 10px;
 }
 
-.course__container {
+s .course__container {
     margin-bottom: 30px;
 }
 
@@ -764,23 +773,23 @@ font-size: 14px;
 }
 
 /* SERVICES */
-.services {
+.benefits {
     background-image: url(../Capstone_img/bg3.jpeg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.services h5 {
+.benefits h5 {
     font-weight: 600;
 }
 
-.services__card {
+.benefits__card {
     position: relative;
     padding: 28px;
 }
 
-.services__icon i {
+.benefits__icon i {
     background: #0d369f;
     color: #0d369f;
     font-size: 28px;
@@ -797,22 +806,22 @@ font-size: 14px;
     margin-right: 30px;
 }
 
-#services__body {
+#benefits__body {
     padding: 0px;
     padding-left: 5px;
 }
 
-.services__container {
+.benefits__container {
     display: flex;
 }
 
-.col-3 .services__icon {
+.col-3 .benefits__icon {
     margin: 1px;
     padding-right: 8px;
     text-align: left;
 }
 
-/* .services__items {
+/* .benefits__items {
     padding: 15px;
 
 } */
