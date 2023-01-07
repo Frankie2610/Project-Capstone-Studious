@@ -255,7 +255,7 @@ header nav form i:hover {
 } */
 header nav .mode-container {
   position: absolute;
-  right: 20px;
+  right: 38px;
   top: 24px;
   width: 24px;
   height: 24px;
@@ -281,8 +281,6 @@ header nav .mode-container {
 
 header nav .mode-container i {
   transform: rotate(-15deg);
-  /* transform: rotate(-15deg) translateY(2px); */
-  color: #0d369f;
   font-size: 24px;
 }
 
@@ -1207,10 +1205,6 @@ font-size: 14px;
   background-color: white;
 }
 
-/* #switchButton {
-  background-color: #f8f9fa;
-} */
-
 #switchButton .fa-sun {
   display: none;
 }
@@ -1231,11 +1225,6 @@ font-size: 14px;
 .dark3#lesson {
   background-color: #121725;
 }
-
-/* 
-.dark #switchButton {
-  background-color: #161c2d;
-} */
 
 .dark #switchButton .fa-sun {
   display: block;
@@ -1291,6 +1280,11 @@ font-size: 14px;
 .dark header nav form i:hover {
   color: #ff6e65;
 }
+
+.dark header nav .hover__ori:hover {
+  color: #ff6e65;
+}
+
 
 .dark #switchButton:hover .fa-sun {
   color: #ff4f81;
