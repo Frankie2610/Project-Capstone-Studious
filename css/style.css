@@ -282,9 +282,11 @@ header nav .mode-container i {
   font-size: 24px;
 }
 
-#switchButton:hover i {
+/* Light Mode icon ko có Hover */
+
+/* #switchButton:hover i {
   color: #ff4f81;
-}
+} */
 
 header nav.nav-fixed .mode-container {
   top: 20px;
@@ -1289,6 +1291,10 @@ font-size: 14px;
     flex: 0 0 25%;
     max-width: 25%;
   }
+
+  .w3l-footer-22 .ab-right-cont {
+    border-left: none;
+  }
 }
 
 
@@ -1318,6 +1324,12 @@ font-size: 14px;
   .right_side {
     margin: 0 1em;
   }
+
+  .w3l-footer-22 .footer-sub {
+    padding: 20px 0;
+  }
+
+
 }
 
 @media screen and (max-width: 430px) {
@@ -1459,7 +1471,8 @@ font-size: 14px;
 
 
 .dark #switchButton:hover .fa-sun {
-  color: #ff4f81;
+  color: #ff6e65;
+  transition: all 0.5s;
 }
 
 .dark #switchButton .fa-moon {
@@ -1573,6 +1586,7 @@ font-size: 14px;
   color: black;
 }
 
-/* .dark .mode .sub-two-right p a {
-  color:#cecece;
-} */
+.dark .instructor h5:hover a {
+  color: #ff6e65;
+  transition: all 0.5s;
+}
