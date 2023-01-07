@@ -410,6 +410,7 @@ header nav.nav-fixed .mode-container {
 .services__item p {
   font-size: 24px;
   color: white;
+  font-weight: 600 !important;
 }
 
 .services__item.item1 {
@@ -1349,6 +1350,13 @@ font-size: 14px;
 
   .services__item p {
     font-size: 19px;
+  }
+
+  .services__item.item1,
+  .services__item.item2,
+  .services__item.item3,
+  .services__item.item4 {
+    padding: 40px 30px;
   }
 }
 
