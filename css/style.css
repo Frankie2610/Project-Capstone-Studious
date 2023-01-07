@@ -135,7 +135,7 @@ p {
 /* HEADER */
 /* my global */
 .hover__ori {
-  transition: all 0.4s;
+  transition: all 0.5s;
   cursor: pointer;
 }
 
@@ -194,7 +194,7 @@ nav.nav-fixed {
 }
 
 .navbar-brand p {
-  font-size: 24px;
+  font-size: 26px;
   margin: 0 3px;
   font-weight: 600;
   color: #0d369f;
@@ -250,9 +250,6 @@ header nav form i:hover {
   color: #ff6e65;
 }
 
-/* nav{
-    position: relative;
-} */
 header nav .mode-container {
   position: absolute;
   right: 38px;
@@ -298,10 +295,7 @@ header nav.nav-fixed .mode-container {
   box-shadow: none;
   border-color: #ced4da;
 }
-/* ::placeholder { 
-  color: orange !important;
-  opacity: 1; 
-} */
+
 /* NAV TOGGLER */
 .navbar-toggler {
   background-color: #0d369f;
