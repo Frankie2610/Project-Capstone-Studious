@@ -271,6 +271,7 @@ header nav .mode-container {
   top: 15px;
   right: 15px;
 }
+
 /* #keyword ::type {
   cursor: pointer;
   color: red;
@@ -397,7 +398,7 @@ header nav.nav-fixed .mode-container {
   display: block;
   margin-bottom: 12px;
   text-align: center;
-  padding: 65px 35px;
+  padding: 50px 35px;
   border-radius: 10px;
   transform: translateY(-30%);
   position: relative;
@@ -648,18 +649,18 @@ font-size: 14px;
 } */
 
 .course__body a {
+  color: #060606;
+  text-decoration: none;
+}
+
+.course__body h5 {
   font-size: 22px;
   font-weight: 600;
-  color: #060606;
-  transition: all 0.5s;
 }
 
-.course__body a:hover {
+.course__body a:hover h5 {
   color: #ff6e65;
-}
-
-.course__body a {
-  text-decoration: none;
+  transition: 0.6s all;
 }
 
 .course__content {
@@ -732,7 +733,7 @@ font-size: 14px;
 
 #benefits__body {
   padding: 0px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .benefits__container {
@@ -779,7 +780,7 @@ font-size: 14px;
 
 .number__item p:last-of-type {
   font-size: 1rem;
-  padding: 25px;
+  padding: 20px;
 }
 
 /* FEEDBACK  */
@@ -912,6 +913,7 @@ font-size: 14px;
 }
 
 .buttonn {
+  display: inline-block;
   background: #0d369f;
   border: none;
   color: #fff;
@@ -966,7 +968,6 @@ font-size: 14px;
 
 .footer__form {
   display: flex;
-  justify-content: center;
 }
 
 .footer__link {
@@ -1078,7 +1079,7 @@ font-size: 14px;
 }
 
 /* BACK TO TOP JS */
-.BacktoTop  {
+.BacktoTop {
   background-color: #0d369f;
   color: white;
 
@@ -1158,7 +1159,7 @@ font-size: 14px;
     width: 200px;
     margin: auto;
   }
-  
+
   button.navbar-toggler .fa-bars {
     display: none;
   }
@@ -1176,9 +1177,9 @@ font-size: 14px;
   }
 
 
-#switchButton {
+  #switchButton {
     position: absolute;
-    top:-5px;
+    top: -5px;
     right: -30px;
   }
 
@@ -1193,6 +1194,183 @@ font-size: 14px;
   }
 }
 
+@media (max-width: 560px) {
+  .contact__us h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .title h3,
+  .studious h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .number__item p:last-of-type {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  .footer__left .footer_left {
+    font-size: 30px;
+
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .buttonn {
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .formm {
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+  }
+
+  .footer__form {
+    flex-wrap: wrap;
+  }
+}
+
+
+@media screen and (max-width: 1199px) {
+  .services__item p {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .benefits__card {
+    padding: 28px 28px 28px 22px;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .col-3 {
+
+    flex: 0 0 20%;
+    max-width: 25%;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .services__item p {
+    font-size: 25px;
+  }
+
+  .number__item p:first-of-type {
+    font-size: 35px;
+    /* padding: 15px; */
+  }
+
+  .number__item p:last-of-type {
+    padding: 15px;
+  }
+
+  .right_side {
+    margin: 0 2em;
+  }
+
+  .card-body {
+    padding: 0 0 0 10px;
+  }
+
+  .col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .right_side {
+    top: -15px;
+  }
+
+
+  .benefits__card {
+    padding: 28px 28px 28px 15px;
+  }
+
+  #benefits__body {
+    padding: 0;
+  }
+
+  .col-3 {
+
+    flex: 0 0 20%;
+    max-width: 25%;
+  }
+
+}
+
+@media (max-width: 736px) {
+  .right_side {
+    margin: 0 1em;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .services__item p {
+    font-size: 23px;
+  }
+
+}
+
+@media screen and (max-width: 415px) {
+
+  .title h3,
+  .studious h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .services__item p {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+
+  .title h3,
+  .studious h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+}
+
+@media (max-width: 380px) {
+  .contact__us h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 320px) {
+  .footer__left .footer_left {
+    font-size: 26px;
+    line-height: 31px;
+  }
+}
+
+/*
+
+@media screen and (max-width: 338px) {
+  .title h3 span {
+    display: block;
+  }
+}
  /* DARK-LIGHT THEMES */
 /* Light theme */
 #myBody {
@@ -1350,7 +1528,7 @@ font-size: 14px;
   color: #0d369f;
 }
 
-.dark .mode ::placeholder { 
+.dark .mode ::placeholder {
   color: #eee;
 }
 
@@ -1398,4 +1576,3 @@ font-size: 14px;
 /* .dark .mode .sub-two-right p a {
   color:#cecece;
 } */
-
