@@ -845,7 +845,7 @@ font-size: 14px;
 }
 
 .social-icons-section a span {
-  color: #0d369f;
+  color: #4867b0;
   font-size: 16px;
   line-height: 28px;
   background-color: white;
@@ -855,7 +855,8 @@ font-size: 14px;
 }
 
 .social-icons-section a:hover {
-  opacity: 0.75;
+  opacity: 0.8;
+  transition: all .5s;
 }
 
 .instructor .team-info {
@@ -1006,12 +1007,17 @@ font-size: 14px;
 }
 
 .footer__link li span {
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   vertical-align: middle;
 
   width: 25px;
   text-align: center;
+  transition:all .3s;
+}
+
+.footer__link li span:hover {
+ opacity: 0.85;
 }
 
 .footer__link .href2 {
@@ -1081,6 +1087,16 @@ font-size: 14px;
   border-left: 1px solid rgb(64 73 82 / 51%);
 }
 
+.w3l-footer-22 p a:hover {
+  color: #fff;
+  transition: all 0.8s;
+}
+
+.footer__link .href1 a:hover, 
+.footer__link .href2 a:hover {
+  color: #fff;
+  transition: all 0.8s;
+}
 /* BACK TO TOP JS */
 .BacktoTop {
   background-color: #0d369f;
