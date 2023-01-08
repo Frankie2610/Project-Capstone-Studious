@@ -845,7 +845,7 @@ font-size: 14px;
 }
 
 .social-icons-section a span {
-  color: #4867b0;
+  color: #0d369f;
   font-size: 16px;
   line-height: 28px;
   background-color: white;
@@ -1458,7 +1458,8 @@ font-size: 14px;
 
 }
 
-.dark #switchButton .fa-search {
+.dark #switchButton .fa-search,
+.dark .mode .social-icons-section a span {
   color: #4867b0;
 }
 
@@ -1571,7 +1572,7 @@ font-size: 14px;
 .dark .mode a span {
   background-color: white;
   color: #0d369f;
-}
+} 
 
 .dark .mode ::placeholder {
   color: #eee;
