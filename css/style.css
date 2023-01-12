@@ -1013,11 +1013,11 @@ font-size: 14px;
 
   width: 25px;
   text-align: center;
-  transition:all .3s;
+  transition: all .3s;
 }
 
 .footer__link li span:hover {
- opacity: 0.85;
+  opacity: 0.85;
 }
 
 .footer__link .href2 {
@@ -1092,11 +1092,12 @@ font-size: 14px;
   transition: all 0.8s;
 }
 
-.footer__link .href1 a:hover, 
+.footer__link .href1 a:hover,
 .footer__link .href2 a:hover {
   color: #fff;
   transition: all 0.8s;
 }
+
 /* BACK TO TOP JS */
 .BacktoTop {
   background-color: #0d369f;
@@ -1179,6 +1180,8 @@ font-size: 14px;
     margin: auto;
   }
 
+
+
   button.navbar-toggler .fa-bars {
     display: none;
   }
@@ -1213,10 +1216,23 @@ font-size: 14px;
   }
 }
 
+@media (max-width: 576px) {
+  .footer-sub {
+    padding: 50px 0 20px !important;
+  }
+}
+
 @media (max-width: 560px) {
   .contact__us h3 {
     font-size: 30px;
     line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  #button_browse {
+    font-size: 14px;
+    padding: 14px 20px;
   }
 }
 
@@ -1260,6 +1276,14 @@ font-size: 14px;
 
   .w3l-footer-22 .footer-sub {
     padding: 80px 0 20px 0;
+  }
+
+  .button__contact {
+    margin-bottom: 30px
+  }
+
+  .footer-sub {
+    padding: 80px 0 20px !important;
   }
 }
 
@@ -1382,6 +1406,10 @@ font-size: 14px;
   .services__item.item4 {
     padding: 40px 30px;
   }
+
+  #button_browse {
+    padding: 14px 15px;
+  }
 }
 
 @media screen and (max-width: 410px) {
@@ -1399,6 +1427,10 @@ font-size: 14px;
     font-size: 28px;
     line-height: 38px;
   }
+
+  #button_browse {
+    padding: 14px 10px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1407,6 +1439,23 @@ font-size: 14px;
     line-height: 31px;
   }
 }
+
+@media (max-width: 333px) {
+  .button__contact {
+    margin-top: 0px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .right_side {
+    margin: 10px 10px 20px 10px;
+  }
+
+  .footer-sub {
+    padding: 100px 0 20px !important;
+  }
+}
+
+
 
 /*
 
@@ -1572,7 +1621,7 @@ font-size: 14px;
 .dark .mode a span {
   background-color: white;
   color: #0d369f;
-} 
+}
 
 .dark .mode ::placeholder {
   color: #eee;

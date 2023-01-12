@@ -18,3 +18,15 @@ document.getElementById("switchButton").onclick = function () {
 //   document.getElementById("expand").classList.add("none")
 //   document.getElementById("close").classList.add("none")
 // }
+
+
+// document.getElementById("expand").onclick = function () {
+//   document.getElementById("expand").classList.add("d-none");
+//   document.getElementById("close").classList.add("d-block");
+
+// }
+
+// document.getElementById("close").onclick = function () {
+//   document.getElementById("expand").classList.add("d-block");
+//   document.getElementById("close").classList.add("d-none");
+// }
